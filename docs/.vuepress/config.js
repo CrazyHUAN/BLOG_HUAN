@@ -3,7 +3,10 @@ const nav = require('./config/nav.js');
 module.exports = {
   title: "HUAN BLOG",
   description: '个人技术博客,不积跬步,无以至千里', // 描述,以 <meta> 标签渲染到页面html中
-  // base: '/vuepress-theme-vdoing/', // '/<github仓库名>/'， 默认'/'
+
+  // base: '/BLOG_HUAN/', // '/<github仓库名>/'， 默认'/'
+  base: process.argv.splice(-1)[0],
+
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
     ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown'}],
@@ -64,7 +67,7 @@ module.exports = {
       link: 'https://github.com/CrazyHUAN' // 可选的
     },
     blogger:{ // 博主信息，显示在首页侧边栏
-      avatar: '/img/wumeng.jpg',
+      avatar: 'https://cdn.jsdelivr.net/gh/CrazyHuan/ImageBank@image/blog/20200902144531.jpg',
       name: '无梦至胜',
       slogan: '我是公司一颗钉,哪里不会点哪里'
     },
@@ -158,34 +161,34 @@ module.exports = {
         hm: '503f098e7e5b3a5b5d8c5fc2938af002'
       }
     ],
-    [
-      'vuepress-plugin-comment', // 评论
-      // {
-      //   choosen: 'valine',
-      //   options: {
-      //     el: '#valine-vuepress-comment',
-      //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
-      //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
-      //     avatar: 'monsterid'
-      //   }
-      // },
-      {
-        choosen: 'gitalk',
-        options: {
-          clientID: 'a6e1355287947096b88b',
-          clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-          repo: 'vuepress-theme-vdoing', // GitHub 仓库
-          owner: 'xugaoyi', // GitHub仓库所有者
-          admin: ['xugaoyi'], // 对仓库有写权限的人
-          // distractionFreeMode: true,
-          pagerDirection: 'last', // 'first'正序 | 'last'倒序
-          id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
-          title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
-          labels: ["Gitalk", "Comment"], // GitHub issue 的标签
-          body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
-        }
-      }
-    ],
+    // [
+    //   'vuepress-plugin-comment', // 评论
+    //   // {
+    //   //   choosen: 'valine',
+    //   //   options: {
+    //   //     el: '#valine-vuepress-comment',
+    //   //     appId: 'qnS1jobNF7CROIQ0XYWBnVOH-gzGzoHsz',
+    //   //     appKey: 'LIKa0ePqFMkglQfOkN0JNK6c',
+    //   //     avatar: 'monsterid'
+    //   //   }
+    //   // },
+    //   {
+    //     choosen: 'gitalk',
+    //     options: {
+    //       clientID: 'a6e1355287947096b88b',
+    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
+    //       repo: 'BLOG_HUAN', // GitHub 仓库
+    //       owner: 'CrazyHUAN', // GitHub仓库所有者
+    //       admin: ['CrazyHUAN'], // 对仓库有写权限的人
+    //       // distractionFreeMode: true,
+    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
+    //       id: "<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>", //  页面的唯一标识,长度不能超过50
+    //       title: "「评论」<%- frontmatter.title %>", // GitHub issue 的标题
+    //       labels: ["Gitalk", "Comment"], // GitHub issue 的标签
+    //       body:"页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>" // GitHub issue 的内容
+    //     }
+    //   }
+    // ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {

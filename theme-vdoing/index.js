@@ -4,6 +4,7 @@ const getSidebarData = require('./node_utils/getSidebarData')
 const {createPage, deletePage} = require('./node_utils/handlePage')
 const chalk = require('chalk') // 命令行打印美化
 const yaml = require('js-yaml') // yaml转js
+const { stringify } = require('querystring')
 const log = console.log
 
 // md容器名
@@ -17,6 +18,13 @@ module.exports = (options, ctx) => {
   // 自动设置front matter
   setFrontmatter(sourceDir, themeConfig)
 
+  log(chalk.blue('tip ') + chalk.green('add sidebar data. 22222'))
+  
+  //huan 测试
+  process.argv.forEach((value,index) =>{
+    log('11 '+value+' '+stringify(index))
+  })
+
   // 自动生成结构化侧边栏
   const sidebar = themeConfig.sidebar
   if(sidebar === 'structuring' || sidebar && sidebar.mode === 'structuring') {
@@ -25,7 +33,6 @@ module.exports = (options, ctx) => {
     if(sidebarData) {
       themeConfig.sidebar = sidebarData
       log(chalk.blue('tip ') + chalk.green('add sidebar data. 侧边栏数据成功生成。'))
-    } else {
       themeConfig.sidebar = 'auto'
       log(chalk.yellow('warning: fail to add sidebar data, switch to "auto". 未能添加侧边栏数据，将切换为“auto”。'))
     }
