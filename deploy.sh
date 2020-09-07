@@ -40,7 +40,7 @@ if [[ $BUILD_GITHUB = 1 ]]; then
     githubUrl=git@github.com:CrazyHUAN/BLOG_HUAN.git
   else
     msg='来自github actions的自动部署'
-    githubUrl=https://CrazyHUAN:${GITHUB_TOKEN}@github.com/CrazyHUAN/vuepress-theme-vdoing.git
+    githubUrl=https://CrazyHUAN:${GITHUB_TOKEN}@github.com/CrazyHUAN/BLOG_HUAN.git
     git config --global user.name "CrazyHUAN"
     git config --global user.email "cunhuangogogo@126.com"
   fi
@@ -66,11 +66,11 @@ if [[ $BUILD_GITEE = 1 ]]; then
 
   # echo 'crazyhuan.gitee.io' > CNAME  # 自定义域名
   
-  if [ -z "$CODING_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
+  if [ -z "$GITEE_TOKEN" ]; then  # -z 字符串 长度为0则为true；$CODING_TOKEN来自于github仓库`Settings/Secrets`设置的私密环境变量
     msg='deploy'
-    giteeUrl=git@gitee.com:crazyhuan/crazyhuan.git
+    giteeUrl=git@gitee.com:CrazyHUAN/crazyhuan.git
   else
-    giteeUrl=https://HmuzsGrGQX:${CODING_TOKEN}@e.coding.net/xgy/xgy.git
+    giteeUrl=https://CrazyHUAN:${GITEE_TOKEN}@gitee.com/CrazyHUAN/crazyhuan.git
   fi
   git init
   git add -A
