@@ -3,7 +3,7 @@
 # 确保脚本抛出遇到的错误
 set -e
 
-BUILD_GITHUB=0;
+BUILD_GITHUB=1;
 BUILD_GITEE=1;
 
 # 测试单独推送指令  npm run dev github / npm run dev gitee
@@ -70,9 +70,10 @@ if [[ $BUILD_GITEE = 1 ]]; then
     msg='deploy'
     giteeUrl=git@gitee.com:CrazyHUAN/crazyhuan.git
   else
-   giteeUrl=https://crazyhuan:${GITEE_TOKEN}@gitee.com/CrazyHUAN/crazyhuan.git
-   git config --global user.name "CrazyHUAN"
-   git config --global user.email "cunhuangogogo@126.com"
+    msg='来自github actions的自动部署'
+    giteeUrl=https://crazyhuan:${GITEE_TOKEN}@gitee.com/CrazyHUAN/crazyhuan.git
+    git config --global user.name "CrazyHUAN"
+    git config --global user.email "cunhuangogogo@126.com"
   fi
  
   git init
