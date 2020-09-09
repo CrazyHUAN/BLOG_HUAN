@@ -25,7 +25,7 @@ module.exports = {
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
     logo: '/img/huan-logo.png', // 导航栏logo
-    repo: 'xugaoyi/vuepress-theme-vdoing', // 导航栏右侧生成Github链接
+    repo: 'CrazyHUAN/BLOG_HUAN', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -158,7 +158,7 @@ module.exports = {
     [
       'vuepress-plugin-baidu-tongji', // 百度统计
       {
-        hm: '503f098e7e5b3a5b5d8c5fc2938af002'
+        hm: '5d79bbc37e1fb0db80fda5a3cfdfa88b'
       }
     ],
     // [
