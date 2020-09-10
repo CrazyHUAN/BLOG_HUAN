@@ -8,19 +8,24 @@
 <h2 align="center">技术博客</h2>
 
 
+
 <p align="center" >
    <a href="https://crazyhuan.gitee.io">国内地址</a>  
    | 
    <a href="https://doc.xugaoyi.com/vuepress-theme-vdoing-doc"> GITHUB源 </a>
 </p>
 
-<p align="center" style="font-size:120%;line-height:60px">
-  这是一个程序员的个人技术博客  
-  <br/>
-  也是一个知识管理库, 记录备忘并分享
-  <br/>
-  同时也分享一些个人的琐碎的见解
-  <br/>
-  欢迎大家访问
+---
 
-</p>
+
+  <h1 align="center"> 这是一个程序员的个人技术博客 </h1>
+
+  <h3 align="center"> 
+  也是一个知识管理库, 记录备忘并分享   
+  <br/>  
+  <br/>
+  同时也发表一些个人的琐碎见解
+  </h3>
+
+  <h1 align="center">欢迎大家访问</h1>
+  <h5 align="center"> :star:随手start一下吧:star: <h5>
