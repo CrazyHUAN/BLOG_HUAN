@@ -28,4 +28,4 @@
   </h3>
 
   <h1 align="center">欢迎大家访问</h1>
-  <h5 align="center"> :star:随手start一下吧:star: <h5>
+  <h5 align="center"> :star:随手Star一下吧:star: <h5>
