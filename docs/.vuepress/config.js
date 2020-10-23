@@ -8,10 +8,10 @@ module.exports = {
   base: process.argv.splice(-1)[0],
 
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/favicon11.ico' }], //favicons，资源放在public文件夹
-    ['meta', { name: 'keywords', content: '博客,个人技术博客,前端,前端开发,算法,计算机视觉,SLAM,3D建模,OpenCV,后台,工具文档,技术文档,学习,面试,JavaScript,js,ES6,vue,python,git,cmake,github,markdown'}],
-    ['meta', { name: 'baidu-site-verification', content: 'uMIWIzKJNL'}],// 百度统计的站点拥有者验证
-    ['meta', { name: 'theme-color', content: '#11a8cd'}], // 移动浏览器主题颜色
+    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['meta', { name: 'keywords', content: '博客,个人技术博客,前端,前端开发,算法,计算机视觉,SLAM,3D建模,OpenCV,后台,工具文档,技术文档,学习,面试,JavaScript,js,ES6,vue,python,git,cmake,github,markdown' }],
+    ['meta', { name: 'baidu-site-verification', content: 'uMIWIzKJNL' }],// 百度统计的站点拥有者验证
+    ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no'}], // 移动端阻止页面缩放
   ],
   markdown: {
@@ -24,7 +24,7 @@ module.exports = {
   themeConfig: { // 主题配置
     nav,
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo1_huan.png', // 导航栏logo
+    logo: '/img/logo_huan.png', // 导航栏logo
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
     docsDir: 'docs', // 编辑的文件夹
@@ -65,12 +65,12 @@ module.exports = {
       name: 'huan', // 必需
       link: 'https://github.com/CrazyHUAN' // 可选的
     },
-    blogger:{ // 博主信息，显示在首页侧边栏
+    blogger: { // 博主信息，显示在首页侧边栏
       avatar: 'https://cdn.jsdelivr.net/gh/CrazyHuan/ImageBank@image/blog/20200902144531.jpg',
       name: '无梦至胜',
       slogan: '我是公司一颗钉,哪里不会点哪里'
     },
-    social:{ // 社交图标，显示于博主信息栏和页脚栏
+    social: { // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
       icons: [
         {
@@ -90,7 +90,7 @@ module.exports = {
         // }
       ]
     },
-    footer:{ // 页脚信息
+    footer: { // 页脚信息
       createYear: 2019, // 博客创建年份
       copyrightInfo: '感谢 Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
     }
@@ -148,7 +148,7 @@ module.exports = {
     [
       'vuepress-plugin-zooming', // 放大图片
       {
-        selector:'.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
+        selector: '.theme-vdoing-content img:not(.no-zoom)', // 排除class是no-zoom的图片
         options: {
           bgColor: 'rgba(0,0,0,0.6)'
         },
@@ -192,7 +192,7 @@ module.exports = {
       '@vuepress/last-updated', // "上次更新"时间格式
       {
         transformer: (timestamp, lang) => {
-          const moment = require('moment') // https://momentjs.com/
+          const moment = require('moment'); // https://momentjs.com/
           return moment(timestamp).format('YYYY/MM/DD, H:MM:SS');
         }
       }
@@ -206,4 +206,4 @@ module.exports = {
   //     }
   //   }
   // }
-}
+};

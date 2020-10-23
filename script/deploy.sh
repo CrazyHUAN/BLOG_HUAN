@@ -41,8 +41,8 @@ if [[ $BUILD_GITHUB = 1 ]]; then
   else
     msg='来自github actions的自动部署'
     githubUrl=https://CrazyHUAN:${GITHUB_TOKEN}@github.com/CrazyHUAN/BLOG_HUAN.git
-    git config --global user.name "CrazyHUAN"
-    git config --global user.email "cunhuangogogo@126.com"
+    git config user.name "CrazyHUAN"
+    git config user.email "cunhuangogogo@126.com"
   fi
   git init
   git add -A
@@ -72,8 +72,8 @@ if [[ $BUILD_GITEE = 1 ]]; then
   else
     msg='来自github actions的自动部署'
     giteeUrl=https://crazyhuan:${GITEE_TOKEN}@gitee.com/CrazyHUAN/crazyhuan.git
-    git config --global user.name "CrazyHUAN"
-    git config --global user.email "cunhuangogogo@126.com"
+    git config user.name "CrazyHUAN"
+    git config user.email "cunhuangogogo@126.com"
   fi
  
   git init

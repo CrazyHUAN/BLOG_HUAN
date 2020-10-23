@@ -1,5 +1,5 @@
 module.exports = [
-  {text: '首页', link: '/'},
+  { text: '首页', link: '/' },
   {
     text: '编程',
     link: '/program/',  //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -22,23 +22,23 @@ module.exports = [
     text: '技术',
     link: '/technology/',
     items: [
-      {text: '技术文档', link: '/pages/9a7ee40fc232253e/'},
-      {text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/'},
-      {text: 'Nodejs', link: '/pages/117708e0af7f0bd9/'},
-      {text: '博客搭建', link: '/pages/41f87d890d0a02af/'},
+      { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+      { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+      { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+      { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
     ]
   },
   {
-    text: '杂谈', 
+    text: '杂谈',
     link: '/tattle/',
     items: [
-      {text: '学习', link: '/pages/f2a556/'},
-      {text: '面试', link: '/pages/aea6571b7a8bae86/'},
-      {text: '心情杂货', link: '/pages/2d615df9a36a98ed/'},
-      {text: '友情链接', link: '/friends/'},
+      { text: '学习', link: '/pages/f2a556/' },
+      { text: '面试', link: '/pages/aea6571b7a8bae86/' },
+      { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
+      { text: '友情链接', link: '/friends/' },
     ]
   },
- 
+
   // {
   //   text: '收藏',
   //   link: '/pages/beb6c0bd8a66cea6/',
@@ -48,6 +48,6 @@ module.exports = [
   //     {text: 'Vue资源', link: '/pages/12df8ace52d493f6/'},
   //   ]
   // },
-  { text: '时间轴', link: '/archives/'},
-  { text: '关于', link: '/about/'},
-]
+  { text: '时间轴', link: '/archives/' },
+  { text: '关于', link: '/about/' },
+];
