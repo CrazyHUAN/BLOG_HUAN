@@ -27,5 +27,4 @@
   同时也发表一些个人的琐碎见解
   </h3>
 
-  <h1 align="center">欢迎大家访问</h1>
-  <h5 align="center"> :star:随手Star一下吧:star: <h5>
+  <h1 align="center">欢迎访问与评论</h1>
