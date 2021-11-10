@@ -12,7 +12,7 @@
 <p align="center" >
    <a href="https://crazyhuan.gitee.io">国内地址</a>  
    | 
-   <a href="https://doc.xugaoyi.com/vuepress-theme-vdoing-doc"> GITHUB源 </a>
+   <a href="https://crazyhuan.github.io/BLOG_HUAN"> GITHUB源 </a>
 </p>
 
 ---

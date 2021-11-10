@@ -1,0 +1,35 @@
+@startuml
+class Impl
+interface Interface
+
+Interface <|.. Impl:实现
+
+class Dep1
+class Dep2
+Dep2 <.. Dep1:依赖
+
+class Ass1
+class Ass2
+Ass2 <-- Ass1:单向依赖
+
+class Ass3
+class Ass4
+Ass4 -- Ass3:双向依赖
+
+class Ass5
+class Ass6
+Ass6 "1..*"<--"0..1" Ass5:多重行依赖
+
+class Agg1
+class Agg2
+Agg2 o-- Agg1:聚合
+
+class Com1
+class Com2
+Com2 *-- Com1:组合
+
+class Parent
+class Sub
+Parent <|-- Sub:继承
+
+@enduml

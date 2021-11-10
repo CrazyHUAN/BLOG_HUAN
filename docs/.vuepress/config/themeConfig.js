@@ -82,4 +82,4 @@ module.exports = {
     copyrightInfo: '感谢主题 Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
   // htmlModules // 插入hmtl(广告)模块
-}
+};

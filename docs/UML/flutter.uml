@@ -1,0 +1,38 @@
+@startuml
+
+class Product{
+  name
+}
+
+interface CardChangeCallback{
+  Product product
+  bool inCard
+}
+
+class ShoppingListItem{
+  Product product
+  bool inCard
+  CardChangeCallback onCardChanged
+
+  _getColor()
+  _getTextStyle()
+
+}
+
+ShoppingListItem --|>  StatelessWidget
+
+ShoppingListItem *--  Product
+ShoppingListItem *--  CardChangeCallback
+
+class ShoppingList {
+  List<Product> products;
+  _ShoppingListState
+}
+
+class _ShoppingListState {
+  Set<_ShoppingCard> _ShoppingCard
+  _handleCardChanged()
+}
+
+
+@enduml
