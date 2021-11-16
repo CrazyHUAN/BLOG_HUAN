@@ -32,10 +32,10 @@ module.exports = [
     text: '杂谈',
     link: '/tattle/',
     items: [
-      { text: '学习', link: '/pages/f2a556/' },
-      { text: '面试', link: '/pages/aea6571b7a8bae86/' },
-      { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
-      { text: '友情链接', link: '/friends/' },
+      // { text: '学习', link: '/pages/f2a556/' },
+      // { text: '面试', link: '/pages/aea6571b7a8bae86/' },
+      // { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
+      // { text: '友情链接', link: '/friends/' },
     ]
   },
 
@@ -49,5 +49,5 @@ module.exports = [
   //   ]
   // },
   { text: '时间轴', link: '/archives/' },
-  { text: '关于', link: '/about/' },
+  // { text: '关于', link: '/about/' },
 ];
