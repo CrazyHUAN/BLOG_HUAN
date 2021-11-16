@@ -11,7 +11,7 @@ module.exports = {
   description: '个人技术博客,不积跬步,无以至千里',
   // base: '/', // 格式：'/<仓库名>/'， 默认'/'
    // base: '/BLOG_HUAN/', // '/<github仓库名>/'， 默认'/'
-  base: process.argv.splice(-1)[0],
+  base: process.argv.slice(-1)[0],
 
   markdown: {
     lineNumbers: true, // 代码行号
